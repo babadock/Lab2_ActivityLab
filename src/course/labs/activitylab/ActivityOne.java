@@ -30,10 +30,10 @@ public class ActivityOne extends Activity {
 
 	// You will need to increment these variables' values when their
 	// corresponding lifecycle methods get called.
-	public int mCreate;
-	public int mRestart;
-	public int mStart;
-	public int mResume;
+	int mCreate;
+	int mRestart;
+	int mStart;
+	int mResume;
 
 	// TODO: Create variables for each of the TextViews
 	// named mTvCreate, mTvRestart, mTvStart, mTvResume.
@@ -66,10 +66,9 @@ public class ActivityOne extends Activity {
 
 				// Create an intent stating which Activity you would like to
 				// start
-				Intent intent = null;
-
+				Intent intent = new Intent(ActivityOne.this, ActivityTwo.class);			
 				// Launch the Activity using the intent
-
+				startActivity(intent);
 			}
 		});
 
